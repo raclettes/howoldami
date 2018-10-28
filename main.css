@@ -47,13 +47,13 @@ input[type=number], select {
     border-top: transparent !important;
     border-left: transparent !important;
     border-right: transparent !important;
-    border-bottom: whitesmoke 2px solid !important;
+    border-bottom: #000 2px solid !important;
     padding: 10px 10px;
     margin: 8px 0;
     width: 10%;
 }
 
-::-webkit-input-placeholder { color: #e4e4e4; }
-::-moz-placeholder { color: #e4e4e4; } /* firefox 19+ */
-:-ms-input-placeholder { color: #e4e4e4; } /* ie */
-input:-moz-placeholder { color: #e4e4e4; }
+::-webkit-input-placeholder { color: #000; }
+::-moz-placeholder { color: #000; } /* firefox 19+ */
+:-ms-input-placeholder { color: #000; } /* ie */
+input:-moz-placeholder { color: #000; }
