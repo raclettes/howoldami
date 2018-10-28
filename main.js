@@ -8,18 +8,13 @@ function show() {
   // Milliseconds, Seconds, Minutes, hours, days, years.
 
   setInterval(function () {
+    if (iteration++ % 1000 === 0) {
+      type++
+    }
+
     var now = new Date()
     var then = new Date(parseInt(document.getElementById('year').value), parseInt(document.getElementById('month').value) - 1, parseInt(document.getElementById('day').value))
     
-    if (iteration == 1) {
-      console.log(now)
-      console.log(then)
-      console.log(now.getFullYear() - then.getFullYear())
-    }
-    
-              if (iteration++ % 1000 === 0) {
-                type++
-              }
     var time = now - then
     switch (type % 5) {
       // case 0:
