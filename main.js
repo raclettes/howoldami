@@ -38,5 +38,23 @@ function show() {
       default:
         break;
     }
+    // actual
+
+    years = Math.floor(time / (1000 * 60 * 60 * 24 * 365))
+    time -= years * 365 * 24 * 60 * 60 * 1000
+
+    days = Math.floor(time / (1000 * 60 * 60 * 24))
+    time -= days * 24 * 60 * 60 * 1000
+
+    hours = Math.floor(time / (1000 * 60 * 60))
+    time -= hours * 60 * 60 * 1000
+
+    minutes = Math.floor(time / (1000 * 60))
+    time -= minutes * 60 * 1000
+
+    seconds = Math.floor(time / (1000))
+    time -= seconds * 1000
+
+    document.getElementById('actual').innerText = `(${years} years, ${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds)`
   }, 1)
 }
