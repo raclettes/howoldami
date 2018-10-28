@@ -1,0 +1,59 @@
+* {
+    font-family: 'Chivo', sans-serif;
+}
+
+#cd {
+    font-size: 10vw;
+}
+
+a:link, a:visited {
+    color: #e4e4e4;
+}
+
+a:hover, a:active {
+    color: lightgrey;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #aec6cf;
+}
+
+.content, .info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    width: 90%;
+}
+
+#timer {
+    display: none;
+}
+
+@media (min-width: 600px) and (orientation:landscape) {
+    #cd {
+        font-size: 10vh;
+    }
+}
+
+
+input[type=number], select {
+    background: transparent;
+    border-top: transparent !important;
+    border-left: transparent !important;
+    border-right: transparent !important;
+    border-bottom: whitesmoke 2px solid !important;
+    padding: 10px 10px;
+    margin: 8px 0;
+    width: 10%;
+}
+
+::-webkit-input-placeholder { color: #e4e4e4; }
+::-moz-placeholder { color: #e4e4e4; } /* firefox 19+ */
+:-ms-input-placeholder { color: #e4e4e4; } /* ie */
+input:-moz-placeholder { color: #e4e4e4; }
